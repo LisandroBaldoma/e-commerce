@@ -1,9 +1,13 @@
 
+import '../scss/ItemsListContainer.scss';
 
 function ItemsListContainer({greeting}) {
   
   return (
-    <h1>{greeting}</h1>
+    <div className="card">
+      <h1 className="ItemsListCustom">{greeting}</h1>
+    </div>
+    
   );
 }
 

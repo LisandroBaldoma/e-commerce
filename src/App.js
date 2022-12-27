@@ -1,4 +1,7 @@
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import './scss/custonBootstrap.scss' 
+ 
 
 import NavBar from "./components/NavBar"
 
@@ -10,7 +13,7 @@ function App() {
       
       <NavBar />
       
-      <ItemsListContainer greeting = "Lisandro E-Comerce"/>
+      <ItemsListContainer greeting = "Lisandro Baldoma 1er. Entrega Comision 34875 E-Comerce-Veterinaria"/>
       
     </div>
   );
