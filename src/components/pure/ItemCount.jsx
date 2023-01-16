@@ -23,9 +23,8 @@ const ItemCount = () => {
   };
 
   return (
-    <div className="border border-primary d-flex flex-column align-items-center">
-      <h2>Control de Stock</h2>
-      <div className="d-flex m-3 gap-3">
+    <div className="d-flex flex-column align-items-center">      
+      <div className="d-flex m-1 gap-3">
         <Button onClick={decrementarItems}>
           <Dash></Dash>
         </Button>
@@ -34,7 +33,7 @@ const ItemCount = () => {
           <Plus></Plus>
         </Button>
       </div>
-      <Button className="col-4 m-3 d-flex justify-content-evenly align-items-center ">
+      <Button className="col-4 d-flex justify-content-evenly align-items-center ">
         <CartPlus></CartPlus>Agregar al carrito
       </Button>
     </div>

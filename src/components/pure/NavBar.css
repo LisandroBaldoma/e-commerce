@@ -1,0 +1,13 @@
+.link{
+    align-items: center;
+    gap: 20px;
+}
+.link a{
+    text-decoration: none;
+}
+.navCuston{
+    
+    justify-content: space-around;
+}
+
+

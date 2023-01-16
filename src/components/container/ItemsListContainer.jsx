@@ -1,12 +1,12 @@
-import "../../scss/ItemsListContainer.scss";
 import { useState, useEffect } from "react";
 import ItemsList from "./ItemsList";
-import ItemDetails from "../pure/ItemDetails";
+import { useParams } from "react-router-dom";
 
 function ItemsListContainer({ greeting }) {
   const [products, setProducts] = useState([]);
-  const [singleProduct, setSingleProduct] = useState([]);
-  const productId = 5;
+  const [ProductsCategory, setProductsCategory] = useState([]);
+
+  const { categoria } = useParams();  
 
   const getProducts = fetch("https://fakestoreapi.com/products", {
     method: "GET",
@@ -15,43 +15,33 @@ function ItemsListContainer({ greeting }) {
     },
   });
 
-  const getSingleProduct = fetch(
-    `https://fakestoreapi.com/products/${productId}`,
-    {
-      method: "GET",
-    }
-  );
-
   useEffect(() => {
     getProducts
       .then((response) => {
         return response.json();
       })
       .then((json) => {
-        console.log(json);
         setProducts(json);
       })
       .catch((error) => console.log(error));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
-    getSingleProduct
-      .then((response) => {
-        return response.json();
-      })
-      .then((json) => {
-        console.log(json);
-        setSingleProduct(json);
-      })
-      .catch((error) => console.log(error));
-  }, []);
+    const productSelect = products.filter(
+      (product) => product.category === categoria
+    );
+    setProductsCategory(productSelect);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [categoria]);
 
   return (
-    <div className="card d-flex">
-      <h1 className="ItemsListCustom">{greeting}</h1>
-
-      <ItemsList products={products}></ItemsList>
-      {/*<ItemDetails singleProduct={singleProduct}></ItemDetails>*/}
+    <div>
+      {categoria === undefined ? (
+        <ItemsList products={products}></ItemsList>
+      ) : (
+        <ItemsList products={ProductsCategory}></ItemsList>
+      )}
     </div>
   );
 }
