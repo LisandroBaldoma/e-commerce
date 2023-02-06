@@ -6,9 +6,7 @@ const Productos = () => {
     <div>
       <h1>LISTADO DE PRODUCTOS</h1>
       <TabsCategory></TabsCategory>
-      <ItemsListContainer
-        greeting={"LISTADO DE PRODUCTOS"}
-      ></ItemsListContainer>
+      <ItemsListContainer></ItemsListContainer>
     </div>
   );
 };

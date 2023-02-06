@@ -30,7 +30,10 @@ export default function NavBar() {
             <NavLink to="/productos">Productos</NavLink>
             <NavLink to="/turnos">Turnos</NavLink>
             <NavLink to="/contactos">Contactos</NavLink>
+            <NavLink to="/cart">
             <CardWidget className="widget" />
+            </NavLink>
+            
           </Nav>          
           
           <Form className="d-flex">

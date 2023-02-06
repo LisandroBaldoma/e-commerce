@@ -10,26 +10,26 @@ function TabsCategory() {
         </NavLink>
       </Nav.Item>
       <Nav.Item className="nav-item">
-        <NavLink className="nav-link" to="/productos/categoria/men's clothing">
-          Hombre
+        <NavLink className="nav-link" to="/categoria/Perro">
+          Perros
         </NavLink>
       </Nav.Item>
       <Nav.Item className="nav-item">
         <NavLink
           className="nav-link"
-          to="/productos/categoria/women's clothing"
+          to="/categoria/Gato"
         >
-          Mujer
+          Gatos
         </NavLink>
       </Nav.Item>
       <Nav.Item className="nav-item">
-        <NavLink className="nav-link" to="/productos/categoria/jewelery">
-          Joyeria
+        <NavLink className="nav-link" to="/categoria/Pesces">
+          Pesces
         </NavLink>
       </Nav.Item>
       <Nav.Item className="nav-item">
-        <NavLink className="nav-link" to="/productos/categoria/electronics">
-          Electronica
+        <NavLink className="nav-link" to="/categoria/Otros">
+          Otros
         </NavLink>
       </Nav.Item>
     </Nav>

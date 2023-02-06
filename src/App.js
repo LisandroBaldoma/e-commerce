@@ -8,23 +8,36 @@ import Productos from "./pages/Productos";
 import Turnos from "./pages/Turnos";
 import Contacto from "./pages/Contacto";
 import NavBar2 from "./components/pure/NavBar";
-
+import CartProvider from "./context/CartProvider";
+import CartView from "./components/pure/CartView";
 
 function App() {
   return (
     <div>
-      <BrowserRouter>        
-        <NavBar2 />
-        <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/fisioterapia" element={<Fisioterapia />}/>
-        <Route path="/productos" element={<Productos />}/>
-        <Route path="productos/categoria/:categoria" element={<Productos />}/>
-        <Route path="productos/categoria/:categoria/producto/:id" element={<ItemsDetailConteiner/>}/>         
-        <Route path="productos/producto/:id" element={<ItemsDetailConteiner/>}/>
-        <Route path="/turnos" element={<Turnos />}/>
-        <Route path="/contactos" element={<Contacto />}/>         
-        </Routes>
+      <BrowserRouter>
+        <CartProvider>
+          <NavBar2 />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/fisioterapia" element={<Fisioterapia />} />
+            <Route path="/productos" element={<Productos />} />
+            <Route
+              path="categoria/:categoria"
+              element={<Productos />}
+            />
+            <Route
+              path="categoria/:categoria"
+              element={<ItemsDetailConteiner />}
+            />
+            <Route
+              path="producto/:id"
+              element={<ItemsDetailConteiner />}
+            />
+            <Route path="/turnos" element={<Turnos />} />
+            <Route path="/contactos" element={<Contacto />} />
+            <Route path="/cart" element={<CartView />} />
+          </Routes>
+        </CartProvider>
       </BrowserRouter>
     </div>
   );

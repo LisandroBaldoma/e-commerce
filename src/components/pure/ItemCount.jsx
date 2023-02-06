@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+
 import { Plus, Dash, CartPlus } from "react-bootstrap-icons";
 import Button from "react-bootstrap/esm/Button";
 
-const ItemCount = () => {
-  const [cantItems, setCantItems] = useState(0);
-  const [stockItem, setStockItem] = useState(5);
+const ItemCount = ({cantItems, setCantItems, stockItem}) => { 
 
   const decrementarItems = () => {
     if (cantItems === 0) {
@@ -21,6 +19,7 @@ const ItemCount = () => {
       setCantItems(cantItems + 1);
     }
   };
+  
 
   return (
     <div className="d-flex flex-column align-items-center">      
@@ -32,10 +31,7 @@ const ItemCount = () => {
         <Button onClick={IncrementarItems}>
           <Plus></Plus>
         </Button>
-      </div>
-      <Button className="col-4 d-flex justify-content-evenly align-items-center ">
-        <CartPlus></CartPlus>Agregar al carrito
-      </Button>
+      </div>     
     </div>
   );
 };

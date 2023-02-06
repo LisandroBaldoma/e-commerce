@@ -9,17 +9,17 @@ export default function items({ product }) {
     <Card key={product.id} style={{ width: "18rem" }}>
       <Card.Img
         variant="top"
-        src={product.image}
+        src={`/img/products/${product.img}`}
         style={{ width: "100%", height: "15rem", padding: "10px" }}
       />
       <Card.Body
         className="d-flex flex-column justify-content-evenly align-items-center"
         style={{ height: "200px" }}
       >
-        <Card.Title>{product.title.substring(0, 30)}</Card.Title>
+        <Card.Title>{product.nombre}</Card.Title>
         {/*<Card.Text>{product.description}</Card.Text>*/}
-        <Card.Text>${product.price}</Card.Text>
-        <Link key={product.id} to={`producto/${product.id}`}>
+        <Card.Text>${product.precio}</Card.Text>
+        <Link key={product.id} to={`/producto/${product.id}`}>
           <Button variant="primary">Detalle</Button>
         </Link>
       </Card.Body>
