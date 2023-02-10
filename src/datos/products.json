@@ -1,0 +1,161 @@
+ [
+    {
+        "categoria": "Alimento",
+        "descripcion": "Proteína para una nutrición completa Alimento rico en proteína animal de alto valor biológico, contiene minerales como calcio, fósforo, potasio y hierro, vitaminas A, D y E, fibras y ácidos grasos esenciales. ",
+        "fabricante": "Purina",
+        "img": "excelent.jpeg",
+        "marca": "Excelent",
+        "mascota": "Perro",
+        "nombre": "Alimento Excellent para gato adulto sabor pollo y arroz en bolsa de 7.5 kg" ,     
+        "precio": 1589,
+        "stock": 10
+
+    },
+    
+    {
+        "categoria": "Alimento",
+        "descripcion": "La mayor ventaja de la comida seca para mascotas es que se puede almacenar por mucho más tiempo sin que se deteriore, y evita la aparición de hongos o bacterias",
+        "fabricante": "Purina",
+        "img": "proplan.jpeg",
+        "marca": "ProPlan",
+        "mascota": "Perro",
+        "nombre": "Alimento Pro Plan OptiHealth para perro adulto de raza" ,     
+        "precio": 1000,
+        "stock": 10
+    },
+    {
+        "categoria": "Alimento",
+        "descripcion": "Royal Canin produce alimentos centrados en las necesidades únicas de tu mascota, brinda una nutrición específica y eficaz, y lo ayuda a convertirse en su mejor versión.",
+        "fabricante": "Mars Petcare",
+        "img": "royalcanin.jpeg",
+        "marca": "Royal Canin",
+        "mascota": "Perro",
+        "nombre": "Alimento Royal Canin Size Health Nutrition Mini Adult para perro adulto de raza pequeña sabor mix en bolsa de 7.5 kg" ,     
+        "precio": 500,
+        "stock": 10
+
+    },
+    {
+        "categoria": "Camas y Cuchas",
+        "descripcion": "Colchón de goma espuma. Fabricado con placa entera, lo que lo vuelve mucho más cómodo para su mascota.",
+        "fabricante": "Lola Pets",
+        "img": "colchon.jpeg",
+        "marca": "Lola Pets",
+        "mascota": "Perro",
+        "nombre": "Colchón Cama Perro Grande Funda Loneta Pesada 100x70x10" ,     
+        "precio": 1300,
+        "stock": 10
+    },
+    {
+        "categoria": "Camas y Cuchas",
+        "descripcion": "Confeccionados con microfibra por fuera y piel sintética super suave por dentro.",
+        "fabricante": "Feeling Cloc",
+        "img": "cama.jpeg",
+        "marca": "Feeling Cloc",
+        "mascota": "Perro",
+        "nombre": "Moises Para Perro Alaska Grande" ,     
+        "precio": 1300,
+        "stock": 10
+    },
+    {
+        "categoria": "Bebederos y Comederos",
+        "descripcion": "Plato Comedero Doble Para Mascotas Bowl Bebedero Perros Gato",
+        "fabricante": "",
+        "img": "comederogenerico.jpeg",
+        "marca": "Generico",
+        "mascota": "Perro",
+        "nombre": "Plato Comedero Doble" ,     
+        "precio": 1300,
+        "stock": 10
+    },
+    {
+        "categoria": "Bebederos y Comederos",
+        "descripcion": "Comedero para mascotas automático Smart tek PF 200 con capacidad para 4kg color blanco",
+        "fabricante": "Smart-Tek",
+        "img": "comederosmart.jpeg",
+        "marca": "Smart-Tek",
+        "mascota": "Perro",
+        "nombre": "Comedero para mascotas automático" ,     
+        "precio": 1300,
+        "stock": 10
+    },
+    {
+        "categoria": "Alimento",
+        "descripcion": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Excellent podrás cubrir las necesidades nutricionales y energéticas de tu gato.",
+        "fabricante": "Purina",
+        "img": "excelentgato.jpeg",
+        "marca": "Excelent",
+        "mascota": "Gato",
+        "nombre": "Alimento Excellent para gato adulto sabor pollo y arroz en bolsa de 7.5 kg" ,     
+        "precio": 1300,
+        "stock": 10
+    },
+    {
+        "categoria": "Alimento",
+        "descripcion": "Tu mascota siempre saludable. Una alimentación equilibrada es esencial para que tu fiel compañero se mantenga sano y fuerte. La dieta de tu gato se refleja en su pelaje, por eso es de vital importancia que contenga todos los nutrientes necesarios para su crecimiento.",
+        "fabricante": "Purina",
+        "img": "catchow.jpeg",
+        "marca": "Cat Chow",
+        "mascota": "Gato",
+        "nombre": "Alimento Cat Chow Defense Plus para gato adulto sabor pescado en bolsa de 15 kg" ,     
+        "precio": 1300,
+        "stock": 10
+    },
+    {
+        "categoria": "Alimento",
+        "descripcion": "Beneficios del alimento seco. La mayor ventaja de la comida seca para mascotas es que se puede almacenar por mucho más tiempo sin que se deteriore, y evita la aparición de hongos o bacterias.",
+        "fabricante": "Alican",
+        "img": "agility.jpeg",
+        "marca": "Agility",
+        "mascota": "Gato",
+        "nombre": "Alimento Agility Premium Urinary para gato adulto sabor mix en bolsa de 10 kg" ,     
+        "precio": 1300,
+        "stock": 10
+    },
+    {
+        "categoria": "Juguetes",
+        "descripcion": "JUGUETE INTERACTIVO PARA GATOS TORRE CON PELOTAS 3 NIVELES",
+        "fabricante": "RAST SRL",
+        "img": "jugueteinteractivo.jpeg",
+        "marca": "RAST SRL",
+        "mascota": "Gato",
+        "nombre": "Juguete Interactivo Para Gatos Torre Con Pelotas 3 Niveles" ,     
+        "precio": 1300,
+        "stock": 10
+    },
+    {
+        "categoria": "Juguetes",
+        "descripcion": "Ningún juguete para perro/gato es indestructible. Se debe prestar atención a la forma de juego de su mascota, ya que si la intención es romperlo es posible que lo haga.",
+        "fabricante": "Terrapet",
+        "img": "terraplest.jpeg",
+        "marca": "Terrapet",
+        "mascota": "Gato",
+        "nombre": "Juguete Gato Cañita Varita Cascabel Raton Plumas Extensible" ,     
+        "precio": 1300,
+        "stock": 10
+    },
+    {
+        "categoria": "Accesorios",
+        "descripcion": "Rascador de madera totalmente, estructura resistente que cuenta con 3 pisos, cucha estantes y pompón, mide 65 cm de altura x 40 de ancho x 40 cm de profundidad , de madera forrados con peluche y alfombra, los mas recomendados ya que pueden usarlo gatos grandes o varios gatos y no pierden estabilidad.",
+        "fabricante": "Garay shila",
+        "img": "rascadormadera.jpeg",
+        "marca": "Garay shila",
+        "mascota": "Gato",
+        "nombre": "" ,     
+        "precio": 1300,
+        "stock": 10
+    },
+    {
+        "categoria": "Accesorios",
+        "descripcion": "SERENEX® Difusor Felinos libera a través de un vapor constante, feromonas",
+        "fabricante": "RAST SRL",
+        "img": "serenexdiusor.jpeg",
+        "marca": "serenex",
+        "mascota": "Gato",
+        "nombre": "Serenex Difusor Para Felinos 42 Ml" ,     
+        "precio": 1300,
+        "stock": 10
+    }
+    
+
+] 

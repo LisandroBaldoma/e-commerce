@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function TabsCategory() {
   return (
-    <Nav variant="tabs" className="justify-content-around mb-3 mt-3">
+    <Nav variant="tabs" className="container justify-content-around mb-3 mt-3">
       <Nav.Item className="nav-item">
         <NavLink className="nav-link" to="/productos">
           Todos
@@ -23,8 +23,8 @@ function TabsCategory() {
         </NavLink>
       </Nav.Item>
       <Nav.Item className="nav-item">
-        <NavLink className="nav-link" to="/categoria/Pesces">
-          Pesces
+        <NavLink className="nav-link" to="/categoria/Alimento">
+          Alimentos
         </NavLink>
       </Nav.Item>
       <Nav.Item className="nav-item">

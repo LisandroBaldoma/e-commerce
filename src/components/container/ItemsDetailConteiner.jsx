@@ -11,25 +11,24 @@ function ItemsDetailConteiner() {
 
   const getSingleProduct = () => {
     const db = getFirestore();
-    const querySnapshot = doc(db, "products", id)
+    const querySnapshot = doc(db, "products", id);
 
     getDoc(querySnapshot)
-    .then((response) => {
-      console.log(response.data())
-      setSingleProduct({id: response.id, ...response.data()})
-    })
-    .catch((error) => console.log(error))
-  }
+      .then((response) => {
+        setSingleProduct({ id: response.id, ...response.data() });
+      })
+      .catch((error) => console.log(error));
+  };
 
   useEffect(() => {
-    getSingleProduct()
-      
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    getSingleProduct();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   return (
     <div className="p-2">
-      <h2 className="text-center">Detalle de productos</h2>
+      <h2 className="text-primary text-center fs-1 m-4">Detalle Producto</h2>
       {<ItemDetails singleProduct={singleProduct}></ItemDetails>}
     </div>
   );

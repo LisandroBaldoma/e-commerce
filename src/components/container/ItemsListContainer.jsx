@@ -12,57 +12,39 @@ import {
 
 function ItemsListContainer() {
   const [products, setProducts] = useState([]);
-  //const [ProductsCategory, setProductsCategory] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const { categoria } = useParams();
 
-  console.log(categoria)
-
   const getProduct = () => {
     const db = getFirestore();
-    const querySnapshot = collection(db, "products");
+    const queryBase = collection(db, "products");
+    console.log(categoria)
 
-    if (categoria) {
-      const newConfiguration = query(
-        querySnapshot,
-        where("mascota", "==", categoria)
-      );
-      getDocs(newConfiguration)
-        .then((response) => {
-          const data = response.docs.map((doc) => {
-            return { id: doc.id, ...doc.data() };
-          });
-          setProducts(data);
-          setLoading(false);
-          console.log(data);
-        })
-        .catch((error) => console.log(error));
-    } else {
-      getDocs(querySnapshot)
-        .then((response) => {
-          const data = response.docs.map((doc) => {
-            return { id: doc.id, ...doc.data() };
-          });
-          setProducts(data);
-          setLoading(false);
-          console.log(data);
-        })
-        .catch((error) => console.log(error));
-    }
+    const querySnapshot = categoria === "Alimento"
+      ? query(queryBase, where("categoria", "==", categoria)) 
+      : categoria === "Otros" ? query(queryBase, where("categoria", "==", categoria)) 
+      : categoria ? query(queryBase, where("mascota", "==", categoria))
+      : queryBase;
+    
+
+    getDocs(querySnapshot)
+      .then((response) => {
+        const data = response.docs.map((doc) => {
+          return { id: doc.id, ...doc.data() };
+        });
+        setProducts(data);
+        setLoading(false);        
+      })
+      .catch((error) => console.log(error));
   };
 
   useEffect(() => {
     getProduct();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [categoria]);  
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [categoria]);
 
-  
-  return (
-    <div>
-      {loading ? <Spiner /> : <ItemsList products={products} />}
-    </div>
-  );
+  return <div>{loading ? <Spiner /> : <ItemsList products={products} />}</div>;
 }
 
 export default ItemsListContainer;

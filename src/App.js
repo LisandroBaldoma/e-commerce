@@ -1,4 +1,3 @@
-//import 'bootstrap/dist/css/bootstrap.min.css';
 import "./scss/custonBootstrap.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemsDetailConteiner from "./components/container/ItemsDetailConteiner";
@@ -21,18 +20,12 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/fisioterapia" element={<Fisioterapia />} />
             <Route path="/productos" element={<Productos />} />
-            <Route
-              path="categoria/:categoria"
-              element={<Productos />}
-            />
+            <Route path="categoria/:categoria" element={<Productos />} />
             <Route
               path="categoria/:categoria"
               element={<ItemsDetailConteiner />}
             />
-            <Route
-              path="producto/:id"
-              element={<ItemsDetailConteiner />}
-            />
+            <Route path="producto/:id" element={<ItemsDetailConteiner />} />
             <Route path="/turnos" element={<Turnos />} />
             <Route path="/contactos" element={<Contacto />} />
             <Route path="/cart" element={<CartView />} />

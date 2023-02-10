@@ -1,3 +1,21 @@
+# Mi primer Proyecto REACTJS - E-commerce
+El proyecto simula un E-commerce con productos para mascotas. En el se puede consultar los distintos productos cargados en una BD consultarlos por categoría para poder navegar en los distintos productos y poder simular la compra de los mismos.
+
+## Tecnologías
+- ReactJS
+- JavaScript
+
+## Dependencias del proyecto
+-react-bootstrap
+-react-bootstrap-icons
+-react-router-dom
+-SwetAAlert2
+-sass
+-firebase
+
+## Base de datos
+-FiresBase
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

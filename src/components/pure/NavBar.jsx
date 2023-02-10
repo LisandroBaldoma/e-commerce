@@ -20,7 +20,6 @@ export default function NavBar() {
             className="d-inline-block align-top"
             alt="Logo Veterinaria"
           />
-          
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="navCuston" id="responsive-navbar-nav">
@@ -31,13 +30,10 @@ export default function NavBar() {
             <NavLink to="/turnos">Turnos</NavLink>
             <NavLink to="/contactos">Contactos</NavLink>
             <NavLink to="/cart">
-            <CardWidget className="widget" />
+              <CardWidget className="widget" />
             </NavLink>
-            
-          </Nav>          
-          
+          </Nav>
           <Form className="d-flex">
-          
             <Form.Control
               type="search"
               placeholder="Buscar..."

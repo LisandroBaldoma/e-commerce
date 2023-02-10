@@ -1,11 +1,10 @@
-
-import { Plus, Dash, CartPlus } from "react-bootstrap-icons";
+import { Plus, Dash } from "react-bootstrap-icons";
 import Button from "react-bootstrap/esm/Button";
 
 const ItemCount = ({cantItems, setCantItems, stockItem}) => { 
 
   const decrementarItems = () => {
-    if (cantItems === 0) {
+    if (cantItems <= 1) {
       alert("Debe seleccionar al menos 1 unidad");
       return;
     }
@@ -18,8 +17,7 @@ const ItemCount = ({cantItems, setCantItems, stockItem}) => {
     } else {
       setCantItems(cantItems + 1);
     }
-  };
-  
+  };  
 
   return (
     <div className="d-flex flex-column align-items-center">      
