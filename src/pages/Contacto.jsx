@@ -1,6 +1,8 @@
-
 export default function Contacto() {
   return (
-    <div className='bg-primary'>INFORMACION DE CONTACRTOS VETERINARIA</div>
-  )
+    <div>
+      <h1 className="bg-primary">INFORMACION DE CONTACTO VETERINARIA</h1>
+    </div>
+  );
 }
+// TODO PAGINA CONTACTOS

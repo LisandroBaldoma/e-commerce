@@ -1,18 +1,31 @@
 import { Plus, Dash } from "react-bootstrap-icons";
 import Button from "react-bootstrap/esm/Button";
+import Swal from "sweetalert2";
 
 const ItemCount = ({cantItems, setCantItems, stockItem}) => { 
 
   const decrementarItems = () => {
     if (cantItems <= 1) {
-      alert("Debe seleccionar al menos 1 unidad");
+      Swal.fire({
+        position: 'center',
+        icon: 'error',
+        title: 'Cantidad minima 1 unidad',
+        showConfirmButton: false,
+        timer: 1500
+      })
       return;
     }
     setCantItems(cantItems - 1);
   };
   const IncrementarItems = () => {
     if (cantItems === stockItem) {
-      alert("La cantidad supera el stock disponible");
+      Swal.fire({
+        position: 'center',
+        icon: 'error',
+        title: 'Supera el stock disponible',
+        showConfirmButton: false,
+        timer: 1500
+      })
       return;
     } else {
       setCantItems(cantItems + 1);

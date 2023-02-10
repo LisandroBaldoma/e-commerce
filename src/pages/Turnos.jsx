@@ -1,6 +1,9 @@
-
 export default function Turnos() {
   return (
-    <div className='bg-danger'>MODULO DE TURNOS</div>
-  )
+    <div>
+      <h1 className="bg-danger">MODULO DE TURNOS</h1>
+    </div>
+  );
 }
+
+// TODO PAGINA SISTEMA TURNOS

@@ -1,6 +1,10 @@
 
 export default function Home() {
   return (
-    <div className='bg-secondary'>Home Presentacion de la veterianria</div>
+    <div>
+        <h1 className='bg-secondary'>PESENTACION VETERINARIA</h1>        
+    </div>    
+    
   )
 }
+// TODO PAGINA HOME

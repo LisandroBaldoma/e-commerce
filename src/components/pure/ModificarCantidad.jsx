@@ -6,6 +6,7 @@ import { cartContext } from "../../context/cartContext";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import { Pencil, CheckCircle, XCircle } from "react-bootstrap-icons";
+import Swal from "sweetalert2";
 
 const ModificarCantidad = ({ product, stock }) => {
   const { editItemCant } = useContext(cartContext);
@@ -36,8 +37,14 @@ const ModificarCantidad = ({ product, stock }) => {
   };
   const handledInput = (event) => {
     event.preventDefault();
-    if(event.target.value < 0 || event.target.value >stock){
-        alert(`La cantidad debe ser mayor a 0 y menor que ${stock}`)
+    if(event.target.value < 1 || event.target.value >stock){
+      Swal.fire({
+        position: 'center',
+        icon: 'error',
+        title: `La cantidad debe ser mayor a 0 y menor que ${stock}` ,
+        showConfirmButton: false,
+        timer: 2000
+      })        
         setformData(1)
     }else{
       setformData(event.target.value);      

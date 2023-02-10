@@ -1,10 +1,14 @@
-
 const Fisioterapia = () => {
-    return (
-        <div className='bg-warning'>
-            PAGIINA INFORMATIVA TRATAMIENTOS FISIOTERAPIA
-        </div>
-    );
-}
+  return (
+    <div>
+      <h1 className="bg-warning">
+        PAGINA INFORMATIVA TRATAMIENTOS FISIOTERAPIA
+      </h1>
+    </div>
+  );
+};
 
 export default Fisioterapia;
+
+
+// TODO PAGINA FISIOTERAPIA
